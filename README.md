@@ -22,7 +22,19 @@ npx understand-image-mcp setup
 
 **方式一：使用 npx（未克隆仓库）**
 
-在项目目录创建 `.mcp.json`：
+项目级配置 — 在项目目录创建 `.mcp.json`：
+```json
+{
+  "mcpServers": {
+    "understand_image": {
+      "command": "npx",
+      "args": ["understand-image-mcp"]
+    }
+  }
+}
+```
+
+全局配置 — 在 `~/.claude.json` 的 `mcpServers` 节点中添加：
 ```json
 {
   "mcpServers": {
@@ -37,12 +49,12 @@ npx understand-image-mcp setup
 **方式二：使用源码（克隆仓库后）**
 
 ```bash
-git clone https://github.com/your-repo/understand-image-mcp.git
+git clone https://github.com/kakaxi3019/understand-image-mcp.git
 cd understand-image-mcp
 npm install
 ```
 
-在项目目录创建 `.mcp.json`：
+项目级配置 — 在项目目录创建 `.mcp.json`：
 ```json
 {
   "mcpServers": {
@@ -54,7 +66,17 @@ npm install
 }
 ```
 
-> 全局配置：添加到 `~/.claude.json` 的 `mcpServers` 节点中。
+全局配置 — 在 `~/.claude.json` 的 `mcpServers` 节点中添加：
+```json
+{
+  "mcpServers": {
+    "understand_image": {
+      "command": "node",
+      "args": ["/path/to/understand-image-mcp/src/server.js"]
+    }
+  }
+}
+```
 
 配置好后，**Claude Code 会自动启动 MCP**，无需手动运行。
 
