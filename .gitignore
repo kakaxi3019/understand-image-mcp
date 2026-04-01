@@ -1,0 +1,21 @@
+node_modules/
+package-lock.json
+.env
+*.log
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test
+tmp/
+dist/
+
+# User config (keep config.json.example)
+config.json

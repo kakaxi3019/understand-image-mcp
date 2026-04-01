@@ -1,0 +1,34 @@
+{
+  "name": "understand-image-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for image understanding using any OpenAI-compatible vision API",
+  "type": "module",
+  "bin": {
+    "understand-image-mcp": "./src/cli.mjs"
+  },
+  "main": "src/cli.mjs",
+  "scripts": {
+    "start": "node src/cli.mjs"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "modelcontextprotocol",
+    "image-understanding",
+    "vision",
+    "openai-compatible"
+  ],
+  "author": "Jupiter",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kakaxi3019/understand-image-mcp"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "openai": "^4.0.0",
+    "dotenv": "^16.0.0"
+  }
+}

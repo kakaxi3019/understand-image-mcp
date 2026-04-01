@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "understand_image": {
+      "command": "npx",
+      "args": ["understand-image-mcp"],
+      "env": {
+        "UNDERSTAND_IMAGE_BASE_URL": "https://api.modelscope.cn/v1",
+        "UNDERSTAND_IMAGE_API_KEY": "${env.MODELSCOPE_API_KEY}",
+        "UNDERSTAND_IMAGE_MODEL": "qwen-vl-max"
+      }
+    }
+  }
+}

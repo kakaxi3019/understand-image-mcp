@@ -1,0 +1,5 @@
+{
+  "baseUrl": "https://api.modelscope.cn/v1",
+  "apiKey": "your_api_key_here",
+  "model": "qwen-vl-max"
+}
