@@ -2,7 +2,7 @@
 
 import { spawn } from 'child_process';
 import readline from 'readline';
-import { loadConfig, saveConfig, getConfigPath, getDefaultConfig, ensureConfigDir } from './config.js';
+import { loadConfig, saveConfig, getConfigPath, getDefaultConfig, ensureConfigDir, DEFAULTS } from './config.js';
 
 const COMMANDS = {
   SETUP: 'setup',
